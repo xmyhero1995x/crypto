@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>FEES</title>
+    <style>
+        :root {
+            --firstColor: #367a3d;
+            --secondColor: #000000;
+            --thirdColor: #d52f6f;
+            --fourthColor: #ffffff;
+            --fivthColor: #f7f8fa;
+            --sixthColor: #575a68;
+            --seventhColor: #f6f0f5;
+            --eightyColor: #edeef2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--seventhColor);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .fee {
+            background-color: var(--fourthColor);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+        }
+
+        .fee__header {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fee__title {
+            color: var(--secondColor);
+            font-size: 25px;
+        }
+
+        .fee__button {
+            background-color: var(--thirdColor);
+            border: none;
+            border-radius: 25px;
+            color: var(--fourthColor);
+            font-size: 25px;
+            height: 60px;
+            width: 220px;
+        }
+
+        .fee__price {
+            color: var(--firstColor);
+            font-size: 66px;
+        }
+
+        .fee__currencies {
+            margin-top: 35px;
+        }
+
+        .fee__currencies-box {
+            background-color: var(--fivthColor);
+            border-radius: 10px;
+            border: 1px solid var(--eightyColor);
+            color: var(--fivthColor);
+            padding: 24px 32px;
+        }
+
+        .fee__currency,
+        .fee__currency-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .fee__currency {
+            justify-content: space-between;
+            margin-bottom: 24px;
+        }
+
+        .fee__currency:last-child {
+            margin-bottom: 0;
+        }
+
+        .fee__currency-img {
+            height: 40px;
+            margin-right: 19px;
+            width: 40px;
+            display: block;
+        }
+
+        .fee__currency-name {
+            align-items: center;
+            color: var(--sixthColor);
+            display: flex;
+            font-size: 24px;
+        }
+
+        .fee__currency-price {
+            align-items: center;
+            color: var(--sixthColor);
+            display: flex;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="fee">
+        <div class="fee__header">
+            <h3 class="fee__title">Unclaimed fees</h3>
+            <button class="fee__button">Collect fees</button>
+        </div>
+        <div class="fee__price">$8.80</div>
+        <div class="fee__currencies">
+            <div class="fee__currencies-box">
+                <div class="fee__currency">
+                    <div class="fee__currency-left">
+                        <img src="https://raw.githubusercontent.com/xmyhero1995x/crypto/main/media/usdc-logo.png" 
+                            alt="currency image" 
+                            class="fee__currency-img">
+                        <h6 class="fee__currency-name">USDC</h6>
+                    </div>
+                    <div class="fee__currency-price">4.74</div>
+                </div>
+
+                <div class="fee__currency">
+                    <div class="fee__currency-left">
+                        <img src="https://raw.githubusercontent.com/xmyhero1995x/crypto/main/media/usdt-logo.png" 
+                            alt="currency image" 
+                            class="fee__currency-img">
+                        <h6 class="fee__currency-name">USDT</h6>
+                    </div>
+                    <div class="fee__currency-price">4.065</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
